@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550672202736E5AF0053EB72 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5506721F2736E5AF0053EB72 /* InfoViewController.swift */; };
 		5545776E2728008A00DE989A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5545776D2728008A00DE989A /* AppDelegate.swift */; };
 		554577702728008A00DE989A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5545776F2728008A00DE989A /* SceneDelegate.swift */; };
-		554577722728008A00DE989A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554577712728008A00DE989A /* ViewController.swift */; };
+		554577722728008A00DE989A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554577712728008A00DE989A /* WelcomeViewController.swift */; };
 		554577752728008A00DE989A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554577732728008A00DE989A /* Main.storyboard */; };
 		554577772728008A00DE989A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554577762728008A00DE989A /* Assets.xcassets */; };
 		5545777A2728008A00DE989A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554577782728008A00DE989A /* LaunchScreen.storyboard */; };
+		55658E542736F61A00AC1E9E /* ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55658E532736F61A00AC1E9E /* ImageName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5506721F2736E5AF0053EB72 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		5545776A2728008A00DE989A /* info about chess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "info about chess.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5545776D2728008A00DE989A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5545776F2728008A00DE989A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		554577712728008A00DE989A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		554577712728008A00DE989A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		554577742728008A00DE989A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		554577762728008A00DE989A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		554577792728008A00DE989A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5545777B2728008A00DE989A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55658E532736F61A00AC1E9E /* ImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageName.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5506721E2736E5690053EB72 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5506721F2736E5AF0053EB72 /* InfoViewController.swift */,
+				554577712728008A00DE989A /* WelcomeViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		550672212736E5C70053EB72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				554577782728008A00DE989A /* LaunchScreen.storyboard */,
+				554577732728008A00DE989A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		550672222736E5E10053EB72 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5545776D2728008A00DE989A /* AppDelegate.swift */,
+				554577762728008A00DE989A /* Assets.xcassets */,
+				5545777B2728008A00DE989A /* Info.plist */,
+				5545776F2728008A00DE989A /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		554577612728008A00DE989A = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +89,20 @@
 		5545776C2728008A00DE989A /* info about chess */ = {
 			isa = PBXGroup;
 			children = (
-				5545776D2728008A00DE989A /* AppDelegate.swift */,
-				5545776F2728008A00DE989A /* SceneDelegate.swift */,
-				554577712728008A00DE989A /* ViewController.swift */,
-				554577732728008A00DE989A /* Main.storyboard */,
-				554577762728008A00DE989A /* Assets.xcassets */,
-				554577782728008A00DE989A /* LaunchScreen.storyboard */,
-				5545777B2728008A00DE989A /* Info.plist */,
+				55658E502736F34500AC1E9E /* Models */,
+				550672222736E5E10053EB72 /* App */,
+				550672212736E5C70053EB72 /* View */,
+				5506721E2736E5690053EB72 /* View Controllers */,
 			);
 			path = "info about chess";
+			sourceTree = "<group>";
+		};
+		55658E502736F34500AC1E9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55658E532736F61A00AC1E9E /* ImageName.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				554577722728008A00DE989A /* ViewController.swift in Sources */,
+				554577722728008A00DE989A /* WelcomeViewController.swift in Sources */,
+				55658E542736F61A00AC1E9E /* ImageName.swift in Sources */,
 				5545776E2728008A00DE989A /* AppDelegate.swift in Sources */,
 				554577702728008A00DE989A /* SceneDelegate.swift in Sources */,
+				550672202736E5AF0053EB72 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +331,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ZAR2UCDS8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "info about chess/Info.plist";
+				INFOPLIST_FILE = "info about chess/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +359,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2ZAR2UCDS8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "info about chess/Info.plist";
+				INFOPLIST_FILE = "info about chess/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
